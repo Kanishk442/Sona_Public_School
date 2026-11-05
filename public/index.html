@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sona Public School, Chauhan Patti, Delhi</title>
+<meta name="description" content="Sona Public School, Chauhan Patti, Delhi — admissions, student homework, announcements and gallery.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#home"><span class="crest">S</span><span><b id="sn">Sona Public School</b><small>Chauhan Patti, Delhi</small></span></a>
+  <button id="burger" aria-label="Menu">☰</button>
+  <nav id="nav">
+    <a href="#home">Home</a><a href="#students">Students</a><a href="#staff">Staff Login</a><a href="#admission" class="cta">Admission Enquiry</a>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="page">
+  <div class="hero"><div><p class="eyebrow">Nurturing minds · Building character</p><h1>Welcome to Sona Public School</h1><p>A caring learning environment for Nursery to Class 8 where every child is encouraged to grow in knowledge, values and confidence.</p><a class="btn" href="#admission">Admission Enquiry</a> <a class="btn ghost" href="#students">Student Homework</a></div></div>
+
+  <div class="wrap"><h2>Latest Announcements</h2><div id="notices" class="cards"></div></div>
+  <div class="wrap alt"><h2>School Gallery</h2>
+    <div class="chips" id="gcats"><button data-c="" class="on">All</button><button data-c="infrastructure">Infrastructure</button><button data-c="competition">Competitions</button></div>
+    <div id="gallery" class="gallery"></div></div>
+  <div class="wrap"><h2>Find Us</h2><div class="two">
+    <div class="card"><h3>Contact</h3><p id="addr"></p><p>📞 <a id="tel"></a></p><p>✉️ <a id="mail"></a></p><p>📷 <a id="insta" target="_blank" rel="noopener">Follow us on Instagram</a></p></div>
+    <iframe title="Map" loading="lazy" class="map" src="https://www.google.com/maps?q=28.753557,77.243183&output=embed"></iframe></div></div>
+</section>
+
+<section id="admission" class="page" hidden><div class="wrap narrow"><h2>Admission Enquiry</h2>
+  <p>Call us directly at <a id="tel2"></a> or send your details and we will get back to you.</p>
+  <form id="enqForm" class="card form">
+    <label>Student Name<input name="studentName" required maxlength="80"></label>
+    <label>Class<select name="classApplying" required><option value="">Select</option></select></label>
+    <label>Email ID<input type="email" name="email" required></label>
+    <label>Phone No.<input type="tel" name="phone" required pattern="[0-9+\-\s]{10,15}"></label>
+    <button class="btn">Submit Enquiry</button><p class="msg" id="enqMsg"></p>
+  </form></div></section>
+
+<section id="students" class="page" hidden><div class="wrap"><h2>Student Corner — Homework &amp; Assignments</h2>
+  <div class="chips" id="classTabs"></div><div class="chips sub" id="subTabs"></div><div id="hw" class="cards"></div></div></section>
+
+<section id="staff" class="page" hidden><div class="wrap" id="staffBox"></div></section>
+</main>
+
+<footer><p>© <span id="yr"></span> Sona Public School, Chauhan Patti, Delhi. All rights reserved.</p></footer>
+<script src="app.js"></script>
+</body>
+</html>
