@@ -1,0 +1,37 @@
+{
+  "logo": "assets/school-logo.jpg",
+  "photos": [
+    {
+      "path": "assets/infrastructure/school-at-night.webp",
+      "category": "Infrastructure"
+    },
+    {
+      "path": "assets/infrastructure/campus-building.webp",
+      "category": "Infrastructure"
+    },
+    {
+      "path": "assets/infrastructure/campus-courtyard.webp",
+      "category": "Infrastructure"
+    },
+    {
+      "path": "assets/infrastructure/school-corridor.webp",
+      "category": "Infrastructure"
+    },
+    {
+      "path": "assets/activities/say-no-to-plastic.webp",
+      "category": "Activities"
+    },
+    {
+      "path": "assets/activities/tree-planting.webp",
+      "category": "Activities"
+    },
+    {
+      "path": "assets/events/independence-day.webp",
+      "category": "Events"
+    },
+    {
+      "path": "assets/creative/student-craft.webp",
+      "category": "Creative learning"
+    }
+  ]
+}
