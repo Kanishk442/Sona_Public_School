@@ -74,3 +74,11 @@ body.lb-open{overflow:hidden}
   .lb{padding:58px 10px 74px}.lb-btn{width:42px;height:42px}.lb-prev,.lb-next{top:auto;bottom:16px;transform:none}.lb-prev{left:calc(50% - 56px)}.lb-next{right:calc(50% - 56px)}
   .dash-head{align-items:start}
 }
+
+/* ---- v5.1: forms no longer overflow the card on phones ---- */
+.form{grid-template-columns:minmax(0,1fr)}
+.form>*,label{min-width:0}
+input,select,textarea{width:100%;min-width:0;max-width:100%}
+input[type=file]{font-size:.85rem;padding:9px 10px}
+input[type=date]{min-height:46px}
+.card.form{overflow:hidden}
